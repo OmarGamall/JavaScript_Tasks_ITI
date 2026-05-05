@@ -1,4 +1,3 @@
-// Function to calculate mathematical operations as requested in Note 2
 function calculateResult(expression) {
     try {
         // use a regex check first to ensure the string only contains numbers and operators
