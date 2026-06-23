@@ -11,14 +11,11 @@ function calculateResult(expression) {
     }
 }
 
-// enter the calculation
 let userInput = prompt("enter your calculations?");
 
 // Use regex to remove any character that is not a digit, operator, or whitespace
 let cleanedInput = userInput.replace(/[^0-9+\-*/.% ]/g, '');
 
-// Calculate the result using the function defined above
 let result = calculateResult(cleanedInput);
 
-// Display the result to the user in an alert box
 alert("the answer is: " + result);

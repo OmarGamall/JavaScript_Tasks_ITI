@@ -1,8 +1,6 @@
-// 1. Ask the user for two integers using prompts
 let firstInput = prompt("Enter first integer:");
 let secondInput = prompt("Enter second integer:");
 
-// 2. Input Validation and Cleaning
 // Use regex to remove any character that is not a digit, decimal point, or minus sign
 let num1 = parseInt(firstInput.replace(/[^0-9.-]/g, ''));
 let num2 = parseInt(secondInput.replace(/[^0-9.-]/g, ''));
@@ -11,7 +9,6 @@ let num2 = parseInt(secondInput.replace(/[^0-9.-]/g, ''));
 if (isNaN(num1)) num1 = 0;
 if (isNaN(num2)) num2 = 0;
 
-// 3. Comparison & Output
 if (num1 > num2) {
     alert(num1 + " is larger than" + num2);
 } 

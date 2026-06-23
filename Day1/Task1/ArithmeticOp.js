@@ -1,8 +1,6 @@
-// 1. Ask the user for two numbers using prompts
 let firstInput = prompt("Enter the first number");
 let secondInput = prompt("Enter the second number");
 
-// 2. Input Validation and Cleaning
 // Use regex to remove any character that is not a digit, decimal point, or minus sign
 let num1 = parseFloat(firstInput.replace(/[^0-9.-]/g, ''));
 let num2 = parseFloat(secondInput.replace(/[^0-9.-]/g, ''));
@@ -11,7 +9,6 @@ let num2 = parseFloat(secondInput.replace(/[^0-9.-]/g, ''));
 if (isNaN(num1)) num1 = 0;
 if (isNaN(num2)) num2 = 0;
 
-// 3. Perform calculations
 let sum = num1 + num2;        
 let difference = num1 - num2; 
 let product = num1 * num2;  
@@ -23,7 +20,6 @@ if (num2 !== 0) {
 }  
   
 
-// 4. Output the results to the document text
 document.write("<h1>Task 1.1 Results</h1>");
 document.write("First Number: " + num1 + "<br>");
 document.write("Second Number: " + num2 + "<br><br>");
